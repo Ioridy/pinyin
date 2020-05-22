@@ -14,7 +14,7 @@ package main
 
 import(
 	"fmt"
-	 "github.com/chain-zhang/pinyin"
+	 "github.com/ioridy/pinyin"
 )
 
 func main()  {
@@ -45,6 +45,14 @@ func main()  {
     }else{
     	fmt.Println(str)
     }	
+    
+    str, err = pinyin.New("我是hahah中国人").Split("-").Mode(pinyin.FirstLatter).Convert()
+    if err != nil {
+        // 错误处理
+    } else {
+        fmt.Println(str)
+    }
+
 }
 ```
 
@@ -55,6 +63,7 @@ WoShiZhongGuoRen
 wo shi zhong guo ren
 wǒ-shì-zhōng-guó-rén
 wo shi zhong guo ren
+w-s-hahah-z-g-r
 ```
 
 Mode 介绍
@@ -62,6 +71,7 @@ Mode 介绍
 * `InitialsInCapitals`: 首字母大写, 不带音调
 * `WithoutTone`: 全小写,不带音调
 * `Tone`: 全小写带音调
+* `FirstLatter`: 每个字拼音的首字母(小写)
 
 Split 介绍
 
