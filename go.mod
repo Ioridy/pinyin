@@ -1,3 +1,3 @@
-module github.com/Chain-Zhang/pinyin
+module github.com/ioridy/pinyin
 
 go 1.13
