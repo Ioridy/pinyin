@@ -26,6 +26,13 @@ func TestConvert(t *testing.T) {
 		t.Log(str)
 	}
 
+	str, err = New("我是hahah中国人").Split("-").Mode(FirstLatter).Convert()
+	if err != nil {
+		t.Error(err)
+	} else {
+		t.Log(str)
+	}
+
 	str, err = New("我是h中国人a").Convert()
 	if err != nil {
 		t.Error(err)
