@@ -5,6 +5,8 @@
 
 golang实现中文汉字转拼音
 
+> forked form [chain-zhang/pinyin](chain-zhang/pinyin "chain-zhang/pinyin"), 因为原repo mod文件有错误导致go get出错，已经提交了PR，这里暂时修改module为我的地址作为过渡， 请持续关注[chain-zhang/pinyin](chain-zhang/pinyin "chain-zhang/pinyin")
+
 demo
 
 ```go
